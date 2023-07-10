@@ -27,9 +27,13 @@ export function pageLoad(labelStr) {
   containerObject[labelStr].style.backgroundColor = "green";
 
   Object.keys(containerObject).forEach((e) =>
-    containerObject[e].addEventListener("click", () => {
-      pageLoad(e);
-    })
+    containerObject[e].addEventListener(
+      "click",
+      () => {
+        pageLoad(e);
+      },
+      { once: true }
+    )
   );
   if (labelStr == "home") homePage();
   else if (labelStr == "menu") menuPage();
