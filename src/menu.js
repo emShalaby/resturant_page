@@ -53,7 +53,7 @@ export function menuPage() {
   }
 
   createSection("best-selling", "Best Selling");
-
+  createSection("shawarma","Shawarma")
   createItem(
     img0,
     "3$",
@@ -68,4 +68,5 @@ export function menuPage() {
     "Chicken shawarma in saj bread cut in 6 pieces, served with French fries and drink, enough for 1 person",
     "best-selling-items"
   );
+  createItem()
 }
