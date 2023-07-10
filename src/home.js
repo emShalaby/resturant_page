@@ -13,10 +13,10 @@ export function homePage() {
   header.id = "header";
   main.id = "main";
 
-  title.innerText = "SHAWARMA METER";
+  title.innerText = "Shawarma Corner ";
 
   p.innerHTML =
-    "Shawarma Meter provides you delicious shawarma with competetive prices and amazing offers .<br>Order now for free delivery!";
+    "Shawarma Corner provides you delicious shawarma with competetive prices and amazing offers .<br>Order now for free delivery!";
 
   p2.innerHTML = "<b>OPEN 24/7</b> ";
   header.appendChild(title);
