@@ -1,9 +1,9 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box ;
 
 }
+
 #labels-container{
     display: flex;
     justify-content: center;
@@ -12,14 +12,31 @@
     gap: 1em;
     background-color: black;
     color: gray;
+    flex: 1;
     
 }
-
+#header{
+    display: flex;
+    justify-content: center;
+}
 .menu-item{
     flex: 1;
     border: solid 2px black;
     display: flex;
+    padding: 1em;
+    margin: 1em;
+    gap: 1em;
+    width: 20em;
 }
 #best-selling{
+    text-align: center;
+}
+#best-selling-items{
     display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    text-align: left;
+}
+#price{
+    align-self: flex-end;
 }

@@ -22,7 +22,8 @@ export function menuPage() {
 
   header.id = "header";
   main.id = "main";
-  itemContainer1.id = "best-selling";
+  itemContainer1.id = "best-selling-items";
+  bestSelling.id = "best-selling";
 
   title.innerText = "Menu";
   h3.textContent = "Best Selling";
@@ -35,10 +36,27 @@ export function menuPage() {
   }
   const item0 = document.querySelector("#item0");
   const item1 = document.querySelector("#item1");
+  let text = document.createElement("div");
+  let p = document.createElement("p");
+  let h4 = document.createElement("h4");
   let img = new Image();
+  let price = document.createElement("p");
+
+  price.id = "price";
+  price.textContent = "3$";
   img.src = img0;
   item0.appendChild(img);
+  h4.textContent = "Chicken Shawarma In Pita Bread Sandwich";
+  p.textContent =
+    "Chicken shawerma, pickles, French fries and garlic mustard sauce served in pita bread";
+  item0.appendChild(text);
+  text.appendChild(h4);
+  text.appendChild(p);
+  item0.appendChild(price);
+
   img = new Image();
   img.src = img1;
   item1.appendChild(img);
+  h4 = document.createElement("h4");
+  h4.textContent = "";
 }
