@@ -8,6 +8,8 @@ export function homePage() {
   const main = document.createElement("div");
   const intro = document.createElement("div");
   const p = document.createElement("p");
+  const p2 = document.createElement("p");
+
   header.id = "header";
   main.id = "main";
 
@@ -16,8 +18,11 @@ export function homePage() {
   p.innerHTML =
     "Shawarma Meter provides you delicious shawarma with competetive prices and amazing offers .<br>Order now for free delivery!";
 
+  p2.innerHTML = "<b>OPEN 24/7</b> ";
   header.appendChild(title);
   content.appendChild(header);
   intro.appendChild(p);
-  content.appendChild(p);
+  intro.appendChild(p2);
+  main.appendChild(intro);
+  content.appendChild(main);
 }
