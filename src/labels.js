@@ -1,4 +1,4 @@
-export function labelsLoad(labelStr) {
+export function pageLoad(labelStr) {
   if (document.querySelector("#labels-container"))
     document.querySelector("#labels-container").remove();
 
@@ -22,6 +22,6 @@ export function labelsLoad(labelStr) {
   containerObject[labelStr].style.backgroundColor = "green";
 
   Object.keys(containerObject).forEach((e) =>
-    containerObject[e].addEventListener("click", () => labelsLoad(e))
+    containerObject[e].addEventListener("click", () => pageLoad(e))
   );
 }

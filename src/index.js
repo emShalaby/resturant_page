@@ -1,5 +1,5 @@
 import { homePage } from "./home.js";
-import { labelsLoad } from "./labels.js";
+import { pageLoad } from "./labels.js";
 
-labelsLoad("home");
+pageLoad("home");
 homePage();
