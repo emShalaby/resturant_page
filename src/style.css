@@ -15,10 +15,12 @@
     flex: 1;
     
 }
+
 #header{
     display: flex;
     justify-content: center;
 }
+
 .menu-item{
     flex: 1;
     border: solid 2px black;
