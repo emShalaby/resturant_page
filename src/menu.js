@@ -10,6 +10,7 @@ export function menuPage() {
   const title = document.createElement("h1");
   const main = document.createElement("div");
 
+  main.id = "main";
   header.appendChild(title);
   content.appendChild(header);
   content.appendChild(main);
@@ -53,7 +54,7 @@ export function menuPage() {
   }
 
   createSection("best-selling", "Best Selling");
-  createSection("shawarma","Shawarma")
+  createSection("shawarma", "Shawarma");
   createItem(
     img0,
     "3$",
@@ -68,5 +69,4 @@ export function menuPage() {
     "Chicken shawarma in saj bread cut in 6 pieces, served with French fries and drink, enough for 1 person",
     "best-selling-items"
   );
-  createItem()
 }
