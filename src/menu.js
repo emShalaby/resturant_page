@@ -56,10 +56,16 @@ export function menuPage() {
 
   createItem(
     img0,
-    "4$",
-    "best meal ever",
-    "best des ever",
-    "best-selling-items",
-    "item0"
+    "3$",
+    "Chicken Shawarma In Pita Bread Sandwich",
+    "Chicken shawerma, pickles, French fries and garlic mustard sauce served in pita bread",
+    "best-selling-items"
+  );
+  createItem(
+    img1,
+    "5$",
+    "Chicken Shawarma In Saj Box",
+    "Chicken shawarma in saj bread cut in 6 pieces, served with French fries and drink, enough for 1 person",
+    "best-selling-items"
   );
 }
