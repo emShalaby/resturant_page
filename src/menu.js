@@ -1,5 +1,7 @@
 import img0 from "./chicken-pita-sandwich.png";
 import img1 from "./chicken-sajbox.png";
+import img2 from "./beef-shawarma-pita.png";
+import img3 from "./chicken-shawarma-fattah.png";
 export function menuPage() {
   if (document.querySelector("#header"))
     document.querySelector("#header").remove();
@@ -70,5 +72,19 @@ export function menuPage() {
     "Chicken Shawarma In Saj Box",
     "Chicken shawarma in saj bread cut in 6 pieces, served with French fries and drink, enough for 1 person",
     "best-selling-items"
+  );
+  createItem(
+    img2,
+    "3$",
+    "Beef Shawarma In Pita Bread Sandwich",
+    "Sliced ​​meat shawerma mixed with tahini, tomatoes, pickles, parsley, onions and served in pita bread",
+    "shawarma-items"
+  );
+  createItem(
+    img3,
+    "Price on Selection",
+    "Chicken Shawerma Fattah",
+    "Chicken Shawerma Fattah",
+    "shawarma-items"
   );
 }

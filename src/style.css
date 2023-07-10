@@ -39,6 +39,7 @@
     flex-wrap: wrap;
     text-align: left;
 }
-#price{
+.price{
     align-self: flex-end;
+    color: goldenrod;
 }
