@@ -23,12 +23,12 @@
 
 .menu-item{
     flex: 1;
-    border: solid 2px black;
     display: flex;
     padding: 1em;
     margin: 1em;
     gap: 1em;
-    width: 20em;
+    min-width: 400px;
+ 
 }
 .section{
     text-align: center;

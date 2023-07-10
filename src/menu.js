@@ -5,6 +5,7 @@ import img3 from "./chicken-shawarma-fattah.png";
 import img4 from "./beef-shawarma-fattah.png";
 import img5 from "./chicken-shawarma-samoun.png";
 import img6 from "./beef-shawarma-samoun.png";
+import img7 from "./img-placeholder.svg";
 export function menuPage() {
   if (document.querySelector("#header"))
     document.querySelector("#header").remove();
@@ -62,6 +63,7 @@ export function menuPage() {
 
   createSection("best-selling", "Best Selling");
   createSection("shawarma", "Shawarma");
+  createSection("extra", "Extra");
   createItem(
     img0,
     "$3",
@@ -111,4 +113,10 @@ export function menuPage() {
     "Beef Shawarma, tomatoes, romaine lettuce, pickles and tahina sauce",
     "shawarma-items"
   );
+  createItem(img7, "$0.50", " Small garlic cup", "", "extra-items");
+  createItem(img7, "$0.50", " Small garlic cup mexican", "", "extra-items");
+  createItem(img7, "$0.50", " Small cup tahina", "", "extra-items");
+  createItem(img7, "$0.75", " Big garlic cup", "", "extra-items");
+  createItem(img7, "$0.75", " Big garlic cup mexican", "", "extra-items");
+  createItem(img7, "$0.75", " Big cup tahina", "", "extra-items");
 }
