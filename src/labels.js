@@ -4,7 +4,7 @@ export function labelsLoad(labelStr) {
   const home = document.createElement("div");
   const menu = document.createElement("div");
   const contacts = document.createElement("div");
-  const containerObjects = { home, menu, contacts };
+  const containerObject = { home, menu, contacts };
   home.textContent = "home";
   menu.textContent = "menu";
   contacts.textContent = "contacts";
@@ -15,5 +15,5 @@ export function labelsLoad(labelStr) {
 
   content.appendChild(container);
 
-  containerObjects[labelStr].style.backgroundColor = "green";
+  containerObject[labelStr].style.backgroundColor = "green";
 }
