@@ -10,7 +10,7 @@ export function homePage() {
   header.id = "header";
   main.id = "main";
 
-  title.innerText = "RESTURANT TITLE";
+  title.innerText = "SHAWARMA METER";
 
   header.appendChild(title);
   content.appendChild(header);
