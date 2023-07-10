@@ -1,0 +1,1 @@
+(()=>{"use strict";!function(){const e=document.querySelector("#content"),t=document.createElement("div"),n=document.createElement("h1");n.innerText="RESTURANT TITLE",t.appendChild(n),e.appendChild(t)}()})();
