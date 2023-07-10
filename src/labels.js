@@ -1,10 +1,14 @@
 export function labelsLoad(labelStr) {
+  if (document.querySelector("#labels-container"))
+    document.querySelector("#labels-container").remove();
+
   const content = document.querySelector("#content");
   const container = document.createElement("div");
   const home = document.createElement("div");
   const menu = document.createElement("div");
   const contacts = document.createElement("div");
   const containerObject = { home, menu, contacts };
+  container.id = "labels-container";
   home.textContent = "home";
   menu.textContent = "menu";
   contacts.textContent = "contacts";
@@ -16,4 +20,8 @@ export function labelsLoad(labelStr) {
   content.appendChild(container);
 
   containerObject[labelStr].style.backgroundColor = "green";
+
+  Object.keys(containerObject).forEach((e) =>
+    containerObject[e].addEventListener("click", () => labelsLoad(e))
+  );
 }
