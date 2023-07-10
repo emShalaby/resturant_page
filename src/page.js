@@ -5,8 +5,7 @@ export function pageLoad(labelStr) {
   if (document.querySelector("#labels-container"))
     document.querySelector("#labels-container").remove();
 
-  if (labelStr == "home") homePage();
-  else if (labelStr == "menu") menuPage();
+
 
   const content = document.querySelector("#content");
   const container = document.createElement("div");
@@ -33,4 +32,6 @@ export function pageLoad(labelStr) {
       pageLoad(e);
     })
   );
+  if (labelStr == "home") homePage();
+  else if (labelStr == "menu") menuPage();
 }
