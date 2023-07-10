@@ -9,26 +9,24 @@ export function menuPage() {
   const header = document.createElement("div");
   const title = document.createElement("h1");
   const main = document.createElement("div");
-  const bestSelling = document.createElement("div");
-  const h3 = document.createElement("h3");
-  const bestSellingItemsContainer = document.createElement("div");
 
   header.appendChild(title);
   content.appendChild(header);
-
-  bestSelling.appendChild(h3);
-  bestSelling.appendChild(bestSellingItemsContainer);
-
-  main.appendChild(bestSelling);
   content.appendChild(main);
 
-  header.id = "header";
-  main.id = "main";
-  bestSellingItemsContainer.id = "best-selling-items";
-  bestSelling.id = "best-selling";
-
-  title.innerText = "Menu";
-  h3.textContent = "Best Selling";
+  function createSection(ID, title) {
+    const section = document.createElement("div");
+    const h3 = document.createElement("h3");
+    const sectionItemsContainer = document.createElement("div");
+    section.appendChild(h3);
+    section.appendChild(sectionItemsContainer);
+    section.id = ID;
+    section.classList.add("section");
+    sectionItemsContainer.id = ID + "-items";
+    sectionItemsContainer.classList.add("section-items-container");
+    main.appendChild(section);
+    h3.textContent = title;
+  }
 
   function createItem(img, price, name, description, sectionID) {
     const itemImage = new Image();
@@ -53,6 +51,8 @@ export function menuPage() {
     text.appendChild(itemDescription);
     itemSection.appendChild(item);
   }
+
+  createSection("best-selling", "Best Selling");
 
   createItem(
     img0,

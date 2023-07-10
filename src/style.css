@@ -30,10 +30,10 @@
     gap: 1em;
     width: 20em;
 }
-#best-selling{
+.section{
     text-align: center;
 }
-#best-selling-items{
+.section-items-container{
     display: flex;
     flex: 1;
     flex-wrap: wrap;
