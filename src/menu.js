@@ -10,7 +10,9 @@ export function menuPage() {
   const title = document.createElement("h1");
   const main = document.createElement("div");
 
+  title.textContent = "Menu";
   main.id = "main";
+  header.id = "header";
   header.appendChild(title);
   content.appendChild(header);
   content.appendChild(main);
