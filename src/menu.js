@@ -29,12 +29,12 @@ export function menuPage() {
     h3.textContent = title;
   }
 
-  function createItem(img, price, name, description, sectionID) {
+  function createItem(img, price, name, description, sectionItemsContainerID) {
     const itemImage = new Image();
     const itemPrice = document.createElement("p");
     const itemName = document.createElement("h4");
     const itemDescription = document.createElement("p");
-    const itemSection = document.querySelector("#" + sectionID);
+    const itemSection = document.querySelector("#" + sectionItemsContainerID);
     const text = document.createElement("div");
     const item = document.createElement("div");
     item.classList.add("menu-item");
