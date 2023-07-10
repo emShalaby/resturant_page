@@ -1,3 +1,5 @@
+import img0 from "./chicken-pita-sandwich.png";
+import img1 from "./chicken-sajbox.png";
 export function menuPage() {
   if (document.querySelector("#header"))
     document.querySelector("#header").remove();
@@ -33,4 +35,10 @@ export function menuPage() {
   }
   const item0 = document.querySelector("#item0");
   const item1 = document.querySelector("#item1");
+  let img = new Image();
+  img.src = img0;
+  item0.appendChild(img);
+  img = new Image();
+  img.src = img1;
+  item1.appendChild(img);
 }

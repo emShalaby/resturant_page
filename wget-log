@@ -1,0 +1,11 @@
+--2023-07-10 16:28:50--  https://images.deliveryhero.io/image/talabat/Menuitems/blob_637809653684670672?width=172
+Resolving images.deliveryhero.io (images.deliveryhero.io)... 104.16.137.15, 104.16.136.15, 2606:4700::6810:890f, ...
+Connecting to images.deliveryhero.io (images.deliveryhero.io)|104.16.137.15|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 56408 (55K) [image/png]
+Saving to: ‘blob_637809653684670672?width=172’
+
+          blob_6378   0%[                    ]       0  --.-KB/s               blob_63780965368467 100%[===================>]  55.09K  --.-KB/s    in 0.004s  
+
+2023-07-10 16:28:54 (12.2 MB/s) - ‘blob_637809653684670672?width=172’ saved [56408/56408]
+
