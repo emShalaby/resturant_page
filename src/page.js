@@ -1,11 +1,10 @@
 import { homePage } from "./home";
 import { menuPage } from "./menu.js";
+import { contactsPage } from "./contacts.js";
 
 export function pageLoad(labelStr) {
   if (document.querySelector("#labels-container"))
     document.querySelector("#labels-container").remove();
-
-
 
   const content = document.querySelector("#content");
   const container = document.createElement("div");
@@ -34,4 +33,5 @@ export function pageLoad(labelStr) {
   );
   if (labelStr == "home") homePage();
   else if (labelStr == "menu") menuPage();
+  else if (labelStr == "contacts") contactsPage();
 }
