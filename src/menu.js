@@ -2,6 +2,9 @@ import img0 from "./chicken-pita-sandwich.png";
 import img1 from "./chicken-sajbox.png";
 import img2 from "./beef-shawarma-pita.png";
 import img3 from "./chicken-shawarma-fattah.png";
+import img4 from "./beef-shawarma-fattah.png";
+import img5 from "./chicken-shawarma-samoun.png";
+import img6 from "./beef-shawarma-samoun.png";
 export function menuPage() {
   if (document.querySelector("#header"))
     document.querySelector("#header").remove();
@@ -83,8 +86,29 @@ export function menuPage() {
   createItem(
     img3,
     "Price on Selection",
-    "Chicken Shawerma Fattah",
-    "Chicken Shawerma Fattah",
+    "Chicken Shawarma Fattah",
+    "Chicken Shawarma Fattah",
+    "shawarma-items"
+  );
+  createItem(
+    img4,
+    "Price on Selection",
+    "Beef Shawarma Fattah",
+    "Beef Shawarma Fattah",
+    "shawarma-items"
+  );
+  createItem(
+    img5,
+    "$6",
+    "Chicken Shawarma in Samoun Bread",
+    "Chicken shawerma, romaine lettuce, pickles and garlic sauce",
+    "shawarma-items"
+  );
+  createItem(
+    img6,
+    "$7",
+    "Beef Shawarma in Samoun Bread",
+    "Beef Shawarma, tomatoes, romaine lettuce, pickles and tahina sauce",
     "shawarma-items"
   );
 }

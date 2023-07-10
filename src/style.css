@@ -40,6 +40,9 @@
     flex-wrap: wrap;
     text-align: left;
 }
+.menu-item>img{
+    height: 80px;
+}
 .price{
     align-self: flex-end;
     color: goldenrod;
