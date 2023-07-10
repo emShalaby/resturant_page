@@ -6,7 +6,7 @@ export function contactsPage() {
   const content = document.querySelector("#content");
   const header = document.createElement("div");
   const title = document.createElement("h1");
-  const main = docuemnt.createElement("div");
+  const main = document.createElement("div");
 
   header.id = "header";
   main.id = "main";
