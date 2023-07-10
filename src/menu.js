@@ -61,21 +61,21 @@ export function menuPage() {
   createSection("shawarma", "Shawarma");
   createItem(
     img0,
-    "3$",
+    "$3",
     "Chicken Shawarma In Pita Bread Sandwich",
     "Chicken shawerma, pickles, French fries and garlic mustard sauce served in pita bread",
     "best-selling-items"
   );
   createItem(
     img1,
-    "5$",
+    "$5",
     "Chicken Shawarma In Saj Box",
     "Chicken shawarma in saj bread cut in 6 pieces, served with French fries and drink, enough for 1 person",
     "best-selling-items"
   );
   createItem(
     img2,
-    "3$",
+    "$3",
     "Beef Shawarma In Pita Bread Sandwich",
     "Sliced ​​meat shawerma mixed with tahini, tomatoes, pickles, parsley, onions and served in pita bread",
     "shawarma-items"
